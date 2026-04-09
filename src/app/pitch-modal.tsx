@@ -6,7 +6,7 @@ export function PitchModal() {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const email = "rejections@whycombinator.in";
+  const email = "whycombinator.in@gmail.com";
 
   function copyEmail() {
     navigator.clipboard.writeText(email);
