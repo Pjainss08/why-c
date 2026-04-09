@@ -119,6 +119,14 @@ function PoweredBy() {
           height={19}
           className="md:h-[25px] md:w-[47px]"
         />
+        <Image
+          src="/assets/Agentic Summer - Black.png"
+          alt="Agentic Summer"
+          width={50}
+          height={25}
+          className="md:h-[30px] md:w-[60px]"
+          unoptimized
+        />
       </div>
     </div>
   );
