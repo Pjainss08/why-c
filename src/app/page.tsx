@@ -125,11 +125,7 @@ const faqs = [
   },
   {
     q: "Is there a ticket to attend?",
-    a: "There\u2019s an entry ticket to watch this event worth 420INR.",
-  },
-  {
-    q: "Is there a ticket to pitch?",
-    a: "If you\u2019re selected to pitch, it\u2019s FREE.",
+    a: "If shortlisted to present, you walk in free. For others attending, earlybird tickets will be out soon.",
   },
 ];
 
