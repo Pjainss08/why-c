@@ -19,15 +19,14 @@ function Nav() {
           </div>
 
           {/* Logo */}
-          <a href="/" className="flex shrink-0 items-center gap-[6px]">
-            <span className="font-sans text-[30px] font-medium leading-[1.12] tracking-[-2.08px] text-black">
-              WHY
-            </span>
-            <span className="relative flex h-[26px] w-[35px] items-center justify-center bg-orange">
-              <span className="font-sans text-[26px] font-medium leading-[1.12] tracking-[-0.26px] text-[#f5f5f5]">
-                C?
-              </span>
-            </span>
+          <a href="/" className="shrink-0">
+            <Image
+              src="/assets/logo.png"
+              alt="WHY C?"
+              width={100}
+              height={38}
+              unoptimized
+            />
           </a>
 
           {/* Right links */}

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "WHY C? — Only for top 1% rejected",
   description:
     "A formidable reject is one who seems like they'll ship anyway, regardless of whatever rejection emails are in the way.",
+  icons: {
+    icon: "/assets/favicon.png",
+  },
 };
 
 export default function RootLayout({
