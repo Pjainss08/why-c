@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Nav() {
   return (
-    <header className="shrink-0 bg-cream py-3 md:py-[13px]">
+    <header className="sticky top-0 z-50 bg-cream py-3 md:py-[13px]">
       <nav className="flex items-center justify-center px-5 py-2 md:py-3">
         <div className="flex max-w-[1400px] flex-1 items-center justify-center gap-10 md:justify-between">
           {/* Left links — hidden on mobile */}
@@ -50,7 +50,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-5 md:gap-10 md:px-4">
+    <section className="flex min-h-dvh flex-col items-center justify-center gap-3 px-5 py-16 md:gap-10 md:px-4 md:py-24">
       <div className="flex flex-col items-center gap-3 md:gap-[47px]">
         {/* Heading */}
         <h1 className="text-center font-serif text-[36px] font-light leading-[1.1] text-ink sm:text-[60px] md:text-[84px]">
@@ -98,6 +98,66 @@ function Hero() {
   );
 }
 
+const faqs = [
+  {
+    q: "Do I need a YC rejection to pitch?",
+    a: "Yes. Screenshot of the rejection email or it didn\u2019t happen.",
+  },
+  {
+    q: "Is this just making fun of people?",
+    a: "No. It\u2019s making fun of the PROCESS while genuinely helping founders get real feedback. The roast format just makes the medicine go down easier.",
+  },
+  {
+    q: "Will there be actual VCs in the audience?",
+    a: "Probably.",
+  },
+  {
+    q: "Can I pitch a new idea (not the one I sent YC)?",
+    a: "Nope. You pitch the EXACT idea YC rejected.",
+  },
+  {
+    q: "Where\u2019s this happening?",
+    a: "Bangalore.",
+  },
+  {
+    q: "Who\u2019s behind this?",
+    a: "This is a part of the Agentic Summer lineup by AI & Weekends and Inner Circle.",
+  },
+  {
+    q: "Is there a ticket to attend?",
+    a: "There\u2019s an entry ticket to watch this event worth 420INR.",
+  },
+  {
+    q: "Is there a ticket to pitch?",
+    a: "If you\u2019re selected to pitch, it\u2019s FREE.",
+  },
+];
+
+function FAQ() {
+  return (
+    <section className="mx-auto w-full max-w-[680px] px-5 py-16 md:px-4 md:py-24">
+      <h2 className="mb-10 font-serif text-[28px] font-light leading-[1.2] text-ink sm:text-[36px] md:mb-14 md:text-[48px]">
+        <em className="font-medium">Frequently</em> asked
+      </h2>
+      <div className="flex flex-col">
+        {faqs.map((faq, i) => (
+          <div
+            key={i}
+            className="border-t border-ink/10 py-5 md:py-7"
+          >
+            <p className="font-serif text-base font-medium leading-[1.4] text-ink md:text-lg">
+              {faq.q}
+            </p>
+            <p className="mt-2 font-serif text-sm leading-[1.6] text-ink/70 md:text-base">
+              {faq.a}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function PoweredBy() {
   return (
     <div className="flex shrink-0 items-center justify-center gap-3 pb-5 pt-3 md:gap-[19px] md:pb-16 md:pt-8">
@@ -140,9 +200,10 @@ function PoweredBy() {
 
 export default function Home() {
   return (
-    <div className="flex h-dvh flex-col overflow-hidden bg-cream">
+    <div className="flex min-h-screen flex-col bg-cream">
       <Nav />
       <Hero />
+      <FAQ />
       <PoweredBy />
     </div>
   );
