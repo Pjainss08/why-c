@@ -2,9 +2,9 @@ import Image from "next/image";
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-50 bg-cream py-[13px]">
-      <nav className="flex items-center justify-center px-5 py-3">
-        <div className="flex max-w-[1400px] flex-1 items-center gap-10">
+    <header className="sticky top-0 z-50 bg-cream py-2 md:py-[13px]">
+      <nav className="flex items-center justify-center px-5 py-2 md:py-3">
+        <div className="flex max-w-[1400px] flex-1 items-center justify-center gap-10 md:justify-between">
           {/* Left links — hidden on mobile */}
           <div className="hidden flex-1 items-center justify-end gap-8 md:flex">
             <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
@@ -23,8 +23,9 @@ function Nav() {
             <Image
               src="/assets/logo.png"
               alt="WHY C?"
-              width={100}
-              height={38}
+              width={80}
+              height={30}
+              className="md:h-[38px] md:w-[100px]"
               unoptimized
             />
           </a>
@@ -49,18 +50,18 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="flex flex-1 flex-col items-center justify-center gap-8 px-5 py-16 md:gap-10 md:px-4 md:py-0">
-      <div className="flex flex-col items-center gap-8 md:gap-[47px]">
+    <section className="flex flex-1 flex-col items-center justify-center gap-5 px-5 md:gap-10 md:px-4">
+      <div className="flex flex-col items-center gap-5 md:gap-[47px]">
         {/* Heading */}
-        <h1 className="text-center font-serif text-[44px] font-light leading-[1.1] text-ink sm:text-[60px] md:text-[84px]">
+        <h1 className="text-center font-serif text-[36px] font-light leading-[1.1] text-ink sm:text-[60px] md:text-[84px]">
           Only for
           <br />
           top <em className="font-medium">1% rejected</em>
         </h1>
 
         {/* Quote */}
-        <blockquote className="flex w-[420px] max-w-full flex-col gap-3 px-2 md:px-0">
-          <p className="font-serif text-base leading-[1.6] text-ink md:text-lg">
+        <blockquote className="flex max-w-full flex-col gap-2 px-2 md:w-[420px] md:gap-3 md:px-0">
+          <p className="font-serif text-sm leading-[1.6] text-ink md:text-lg">
             <span>[1]</span>{" "}
             <em>
               &ldquo;A formidable reject is one who seems like they&rsquo;ll
@@ -68,23 +69,23 @@ function Hero() {
               way.
             </em>
           </p>
-          <cite className="block pr-2 text-right font-serif text-sm not-italic leading-[1.5] text-ink md:text-base">
+          <cite className="block pr-2 text-right font-serif text-xs not-italic leading-[1.5] text-ink md:text-base">
             <em>— Claude</em>
           </cite>
         </blockquote>
       </div>
 
       {/* CTAs */}
-      <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-5">
+      <div className="flex items-center gap-4 sm:gap-5">
         <a
           href="#"
-          className="flex h-[46px] items-center justify-center rounded-full bg-black px-6 font-serif text-lg italic leading-[1.12] tracking-[-0.6px] text-[#f5f5ed] md:px-4 md:text-xl"
+          className="flex h-10 items-center justify-center rounded-full bg-black px-5 font-serif text-base italic leading-[1.12] tracking-[-0.6px] text-[#f5f5ed] md:h-[46px] md:px-4 md:text-xl"
         >
           Be an Attendee
         </a>
         <a
           href="#"
-          className="font-sans text-lg leading-[1.12] tracking-[-0.6px] text-black md:text-xl"
+          className="font-sans text-base leading-[1.12] tracking-[-0.6px] text-black md:text-xl"
         >
           Submit a Pitch
         </a>
@@ -95,22 +96,24 @@ function Hero() {
 
 function PoweredBy() {
   return (
-    <div className="flex items-center justify-center gap-[19px] pb-10 pt-6 md:pb-16 md:pt-8">
-      <span className="font-serif text-base leading-[1.6] text-black md:text-lg">
+    <div className="flex items-center justify-center gap-3 pb-6 pt-4 md:gap-[19px] md:pb-16 md:pt-8">
+      <span className="font-serif text-sm leading-[1.6] text-black md:text-lg">
         Powered by
       </span>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-3 md:gap-5">
         <Image
           src="/assets/inner-circle-logo.svg"
           alt="Inner Circle"
-          width={81}
-          height={21}
+          width={60}
+          height={16}
+          className="md:h-[21px] md:w-[81px]"
         />
         <Image
           src="/assets/aiweekends-logo.svg"
           alt="AI Weekends"
-          width={47}
-          height={25}
+          width={35}
+          height={19}
+          className="md:h-[25px] md:w-[47px]"
         />
       </div>
     </div>
@@ -119,7 +122,7 @@ function PoweredBy() {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-cream">
+    <div className="flex h-screen flex-col overflow-hidden bg-cream">
       <Nav />
       <Hero />
       <PoweredBy />
