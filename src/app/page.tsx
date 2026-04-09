@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PitchModal } from "./pitch-modal";
 
 function Nav() {
   return (
@@ -87,12 +88,7 @@ function Hero() {
         >
           I will Watch
         </button>
-        <a
-          href="mailto:rejection@whycombinator.in"
-          className="font-sans text-base leading-[1.12] tracking-[-0.6px] text-black md:text-xl"
-        >
-          I will Pitch
-        </a>
+        <PitchModal />
       </div>
     </section>
   );
