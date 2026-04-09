@@ -1,65 +1,129 @@
 import Image from "next/image";
 
+function Nav() {
+  return (
+    <header className="sticky top-0 z-50 bg-cream py-[13px]">
+      <nav className="flex items-center justify-center px-5 py-3">
+        <div className="flex max-w-[1400px] flex-1 items-center gap-10">
+          {/* Left links */}
+          <div className="flex flex-1 items-center justify-end gap-8">
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Copium
+            </a>
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Rejects
+            </a>
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Therapy
+            </a>
+          </div>
+
+          {/* Logo */}
+          <a href="/" className="flex shrink-0 items-center gap-[6px]">
+            <span className="font-sans text-[30px] font-medium leading-[1.12] tracking-[-2.08px] text-black">
+              WHY
+            </span>
+            <span className="relative flex h-[26px] w-[35px] items-center justify-center bg-orange">
+              <span className="font-sans text-[26px] font-medium leading-[1.12] tracking-[-0.26px] text-[#f5f5f5]">
+                C?
+              </span>
+            </span>
+          </a>
+
+          {/* Right links */}
+          <div className="flex flex-1 items-center gap-8">
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Rejectors
+            </a>
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Excuses
+            </a>
+            <a href="#" className="rounded-md px-3 py-2 font-sans text-sm tracking-[0.4px] text-ink">
+              Startup Graveyard
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}
+
+function Hero() {
+  return (
+    <section className="flex flex-1 flex-col items-center justify-center gap-10 px-4">
+      <div className="flex flex-col items-center gap-[47px]">
+        {/* Heading */}
+        <h1 className="text-center font-serif text-[84px] font-light leading-[1.1] text-ink">
+          Only for
+          <br />
+          top <em className="font-medium">1% rejected</em>
+        </h1>
+
+        {/* Quote */}
+        <blockquote className="flex w-[420px] max-w-full flex-col gap-3">
+          <p className="font-serif text-lg leading-[1.6] text-ink">
+            <span>[1]</span>{" "}
+            <em>
+              &ldquo;A formidable reject is one who seems like they&rsquo;ll
+              ship anyway, regardless of whatever rejection emails are in the
+              way.
+            </em>
+          </p>
+          <cite className="block pr-2 text-right font-serif text-base not-italic leading-[1.5] text-ink">
+            <em>— Claude</em>
+          </cite>
+        </blockquote>
+      </div>
+
+      {/* CTAs */}
+      <div className="flex items-center gap-5">
+        <a
+          href="#"
+          className="flex h-[46px] items-center justify-center rounded-full bg-black px-4 font-serif text-xl italic leading-[1.12] tracking-[-0.6px] text-[#f5f5ed]"
+        >
+          Be an Attendee
+        </a>
+        <a
+          href="#"
+          className="font-sans text-xl leading-[1.12] tracking-[-0.6px] text-black"
+        >
+          Submit a Pitch
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function PoweredBy() {
+  return (
+    <div className="flex items-center justify-center gap-[19px] pb-16 pt-8">
+      <span className="font-serif text-lg leading-[1.6] text-black">
+        Powered by
+      </span>
+      <div className="flex items-center gap-5">
+        <Image
+          src="/assets/inner-circle-logo.svg"
+          alt="Inner Circle"
+          width={81}
+          height={21}
+        />
+        <Image
+          src="/assets/aiweekends-logo.svg"
+          alt="AI Weekends"
+          width={47}
+          height={25}
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="flex min-h-screen flex-col bg-cream">
+      <Nav />
+      <Hero />
+      <PoweredBy />
     </div>
   );
 }
