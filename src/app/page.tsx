@@ -105,28 +105,34 @@ function PoweredBy() {
         Powered by
       </span>
       <div className="flex items-center gap-3 md:gap-5">
-        <Image
-          src="/assets/inner-circle-logo.svg"
-          alt="Inner Circle"
-          width={60}
-          height={16}
-          className="md:h-[21px] md:w-[81px]"
-        />
-        <Image
-          src="/assets/aiweekends-logo.svg"
-          alt="AI Weekends"
-          width={35}
-          height={19}
-          className="md:h-[25px] md:w-[47px]"
-        />
-        <Image
-          src="/assets/Agentic Summer - Black.png"
-          alt="Agentic Summer"
-          width={50}
-          height={25}
-          className="md:h-[30px] md:w-[60px]"
-          unoptimized
-        />
+        <a href="https://x.com/innercircle_so" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/assets/inner-circle-logo.svg"
+            alt="Inner Circle"
+            width={60}
+            height={16}
+            className="md:h-[21px] md:w-[81px]"
+          />
+        </a>
+        <a href="https://x.com/aiweekendsxyz" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/assets/aiweekends-logo.svg"
+            alt="AI Weekends"
+            width={35}
+            height={19}
+            className="md:h-[25px] md:w-[47px]"
+          />
+        </a>
+        <a href="https://agenticsummer.innercircle.so/" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/assets/Agentic Summer - Black.png"
+            alt="Agentic Summer"
+            width={70}
+            height={35}
+            className="md:h-[40px] md:w-[80px]"
+            unoptimized
+          />
+        </a>
       </div>
     </div>
   );
