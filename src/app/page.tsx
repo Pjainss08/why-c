@@ -51,7 +51,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="flex min-h-dvh flex-col items-center justify-center gap-3 px-5 py-16 md:gap-10 md:px-4 md:py-24">
+    <section className="-mt-[60px] flex min-h-dvh flex-col items-center justify-center gap-3 px-5 pt-[60px] md:-mt-[76px] md:gap-10 md:px-4 md:pt-[76px]">
       <div className="flex flex-col items-center gap-3 md:gap-[47px]">
         {/* Heading */}
         <h1 className="text-center font-serif text-[36px] font-light leading-[1.1] text-ink sm:text-[60px] md:text-[84px]">
