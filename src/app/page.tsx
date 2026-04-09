@@ -85,13 +85,13 @@ function Hero() {
           data-tally-form-events-forwarding="1"
           className="flex h-10 cursor-pointer items-center justify-center rounded-full bg-black px-5 font-serif text-base italic leading-[1.12] tracking-[-0.6px] text-[#f5f5ed] md:h-[46px] md:px-4 md:text-xl"
         >
-          Be an Attendee
+          I will Watch
         </button>
         <a
           href="#"
           className="font-sans text-base leading-[1.12] tracking-[-0.6px] text-black md:text-xl"
         >
-          Submit a Pitch
+          I will Pitch
         </a>
       </div>
     </section>
