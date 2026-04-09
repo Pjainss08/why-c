@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-50 bg-cream py-2 md:py-[13px]">
-      <nav className="flex items-center justify-center px-5 py-2 md:py-3">
+    <header className="shrink-0 bg-cream py-1 md:py-[13px]">
+      <nav className="flex items-center justify-center px-5 py-1 md:py-3">
         <div className="flex max-w-[1400px] flex-1 items-center justify-center gap-10 md:justify-between">
           {/* Left links — hidden on mobile */}
           <div className="hidden flex-1 items-center justify-end gap-8 md:flex">
@@ -50,8 +50,8 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="flex flex-1 flex-col items-center justify-center gap-5 px-5 md:gap-10 md:px-4">
-      <div className="flex flex-col items-center gap-5 md:gap-[47px]">
+    <section className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 px-5 md:gap-10 md:px-4">
+      <div className="flex flex-col items-center gap-3 md:gap-[47px]">
         {/* Heading */}
         <h1 className="text-center font-serif text-[36px] font-light leading-[1.1] text-ink sm:text-[60px] md:text-[84px]">
           Only for
@@ -96,7 +96,7 @@ function Hero() {
 
 function PoweredBy() {
   return (
-    <div className="flex items-center justify-center gap-3 pb-6 pt-4 md:gap-[19px] md:pb-16 md:pt-8">
+    <div className="flex shrink-0 items-center justify-center gap-3 pb-3 pt-2 md:gap-[19px] md:pb-16 md:pt-8">
       <span className="font-serif text-sm leading-[1.6] text-black md:text-lg">
         Powered by
       </span>
@@ -122,7 +122,7 @@ function PoweredBy() {
 
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col overflow-hidden bg-cream">
+    <div className="flex h-dvh flex-col overflow-hidden bg-cream">
       <Nav />
       <Hero />
       <PoweredBy />
