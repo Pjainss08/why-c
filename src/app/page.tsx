@@ -88,7 +88,7 @@ function Hero() {
           I will Watch
         </button>
         <a
-          href="#"
+          href="mailto:rejection@whycombinator.in"
           className="font-sans text-base leading-[1.12] tracking-[-0.6px] text-black md:text-xl"
         >
           I will Pitch
