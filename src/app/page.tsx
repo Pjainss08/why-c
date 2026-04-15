@@ -78,16 +78,14 @@ function Hero() {
 
       {/* CTAs */}
       <div className="flex items-center gap-4 sm:gap-5">
-        <button
-          data-tally-open="A7qdpz"
-          data-tally-layout="modal"
-          data-tally-emoji-text="👋"
-          data-tally-emoji-animation="wave"
-          data-tally-form-events-forwarding="1"
+        <a
+          href="https://offlyn.life/e/JPo9UcO"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex h-10 cursor-pointer items-center justify-center rounded-full bg-black px-5 font-serif text-base italic leading-[1.12] tracking-[-0.6px] text-[#f5f5ed] md:h-[46px] md:px-4 md:text-xl"
         >
           I will Watch
-        </button>
+        </a>
         <PitchModal />
       </div>
     </section>
