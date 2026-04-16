@@ -203,11 +203,11 @@ function PoweredBy() {
           unoptimized
         />
         <Image
-          src="/assets/ce.png"
-          alt="CE"
-          width={55}
+          src="/assets/CE Logo.png"
+          alt="Conscious Engines"
+          width={80}
           height={22}
-          className="md:h-[26px] md:w-[65px]"
+          className="md:h-[26px] md:w-[95px]"
           unoptimized
         />
       </div>
