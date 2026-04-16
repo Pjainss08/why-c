@@ -150,10 +150,7 @@ function FAQ() {
 
 function PoweredBy() {
   return (
-    <div className="flex shrink-0 flex-col items-center gap-4 pb-8 pt-4 md:gap-5 md:pb-16 md:pt-8">
-      <span className="font-serif text-sm leading-[1.6] text-black md:text-lg">
-        Powered by
-      </span>
+    <div className="flex shrink-0 flex-col items-center pb-8 pt-4 md:pb-16 md:pt-8">
       <div className="flex flex-wrap items-center justify-center gap-5 px-5 md:gap-8">
         <a href="https://x.com/innercircle_so" target="_blank" rel="noopener noreferrer">
           <Image
@@ -176,9 +173,9 @@ function PoweredBy() {
         <Image
           src="/assets/offlyn.png"
           alt="Offlyn"
-          width={60}
-          height={20}
-          className="md:h-[24px] md:w-[72px]"
+          width={24}
+          height={24}
+          className="h-[20px] w-auto md:h-[24px]"
           unoptimized
         />
         <Image
