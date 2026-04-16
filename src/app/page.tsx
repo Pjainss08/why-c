@@ -189,9 +189,9 @@ function PoweredBy() {
         <Image
           src="/assets/quenzy logo 1.png"
           alt="Quenzy"
-          width={55}
+          width={80}
           height={22}
-          className="md:h-[26px] md:w-[65px]"
+          className="md:h-[26px] md:w-[95px]"
           unoptimized
         />
         <Image
@@ -200,6 +200,14 @@ function PoweredBy() {
           width={70}
           height={18}
           className="md:h-[22px] md:w-[85px]"
+          unoptimized
+        />
+        <Image
+          src="/assets/ce.png"
+          alt="CE"
+          width={55}
+          height={22}
+          className="md:h-[26px] md:w-[65px]"
           unoptimized
         />
       </div>
