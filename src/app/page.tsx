@@ -173,9 +173,9 @@ function PoweredBy() {
         <Image
           src="/assets/offlyn.png"
           alt="Offlyn"
-          width={24}
-          height={24}
-          className="h-[20px] w-auto md:h-[24px]"
+          width={65}
+          height={18}
+          className="md:h-[22px] md:w-[78px]"
           unoptimized
         />
         <Image
