@@ -151,65 +151,69 @@ function FAQ() {
 function PoweredBy() {
   return (
     <div className="flex shrink-0 flex-col items-center pb-8 pt-4 md:pb-16 md:pt-8">
-      <div className="flex flex-wrap items-center justify-center gap-5 px-5 md:gap-8">
-        <a href="https://x.com/innercircle_so" target="_blank" rel="noopener noreferrer">
+      <div className="flex flex-col items-center gap-4 px-5 md:gap-6">
+        <div className="flex items-center justify-center gap-5 md:gap-8">
+          <a href="https://x.com/innercircle_so" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/assets/inner-circle-logo.svg"
+              alt="Inner Circle"
+              width={70}
+              height={18}
+              className="md:h-[21px] md:w-[81px]"
+            />
+          </a>
+          <a href="https://x.com/aiweekendsxyz" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/assets/aiweekends-logo.svg"
+              alt="AI Weekends"
+              width={40}
+              height={22}
+              className="md:h-[25px] md:w-[47px]"
+            />
+          </a>
           <Image
-            src="/assets/inner-circle-logo.svg"
-            alt="Inner Circle"
+            src="/assets/offlyn.png"
+            alt="Offlyn"
+            width={65}
+            height={18}
+            className="md:h-[22px] md:w-[78px]"
+            unoptimized
+          />
+          <Image
+            src="/assets/drickle.png"
+            alt="Drickle"
+            width={60}
+            height={18}
+            className="md:h-[22px] md:w-[72px]"
+            unoptimized
+          />
+        </div>
+        <div className="flex items-center justify-center gap-5 md:gap-8">
+          <Image
+            src="/assets/quenzy logo 1.png"
+            alt="Quenzy"
+            width={80}
+            height={22}
+            className="md:h-[26px] md:w-[95px]"
+            unoptimized
+          />
+          <Image
+            src="/assets/SN Logo Black.png"
+            alt="Starknet"
             width={70}
             height={18}
-            className="md:h-[21px] md:w-[81px]"
+            className="md:h-[22px] md:w-[85px]"
+            unoptimized
           />
-        </a>
-        <a href="https://x.com/aiweekendsxyz" target="_blank" rel="noopener noreferrer">
           <Image
-            src="/assets/aiweekends-logo.svg"
-            alt="AI Weekends"
-            width={40}
+            src="/assets/CE Logo.png"
+            alt="Conscious Engines"
+            width={80}
             height={22}
-            className="md:h-[25px] md:w-[47px]"
+            className="md:h-[26px] md:w-[95px]"
+            unoptimized
           />
-        </a>
-        <Image
-          src="/assets/offlyn.png"
-          alt="Offlyn"
-          width={65}
-          height={18}
-          className="md:h-[22px] md:w-[78px]"
-          unoptimized
-        />
-        <Image
-          src="/assets/drickle.png"
-          alt="Drickle"
-          width={60}
-          height={18}
-          className="md:h-[22px] md:w-[72px]"
-          unoptimized
-        />
-        <Image
-          src="/assets/quenzy logo 1.png"
-          alt="Quenzy"
-          width={80}
-          height={22}
-          className="md:h-[26px] md:w-[95px]"
-          unoptimized
-        />
-        <Image
-          src="/assets/SN Logo Black.png"
-          alt="Starknet"
-          width={70}
-          height={18}
-          className="md:h-[22px] md:w-[85px]"
-          unoptimized
-        />
-        <Image
-          src="/assets/CE Logo.png"
-          alt="Conscious Engines"
-          width={80}
-          height={22}
-          className="md:h-[26px] md:w-[95px]"
-          unoptimized
-        />
+        </div>
       </div>
     </div>
   );
