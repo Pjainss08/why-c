@@ -150,17 +150,17 @@ function FAQ() {
 
 function PoweredBy() {
   return (
-    <div className="flex shrink-0 items-center justify-center gap-3 pb-5 pt-3 md:gap-[19px] md:pb-16 md:pt-8">
+    <div className="flex shrink-0 flex-col items-center gap-4 pb-8 pt-4 md:gap-5 md:pb-16 md:pt-8">
       <span className="font-serif text-sm leading-[1.6] text-black md:text-lg">
         Powered by
       </span>
-      <div className="flex items-center gap-3 md:gap-5">
+      <div className="flex flex-wrap items-center justify-center gap-5 px-5 md:gap-8">
         <a href="https://x.com/innercircle_so" target="_blank" rel="noopener noreferrer">
           <Image
             src="/assets/inner-circle-logo.svg"
             alt="Inner Circle"
-            width={60}
-            height={16}
+            width={70}
+            height={18}
             className="md:h-[21px] md:w-[81px]"
           />
         </a>
@@ -168,21 +168,43 @@ function PoweredBy() {
           <Image
             src="/assets/aiweekends-logo.svg"
             alt="AI Weekends"
-            width={35}
-            height={19}
+            width={40}
+            height={22}
             className="md:h-[25px] md:w-[47px]"
           />
         </a>
-        <a href="https://agenticsummer.innercircle.so/" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/assets/Agentic Summer - Black.png"
-            alt="Agentic Summer"
-            width={70}
-            height={35}
-            className="md:h-[40px] md:w-[80px]"
-            unoptimized
-          />
-        </a>
+        <Image
+          src="/assets/offlyn.png"
+          alt="Offlyn"
+          width={60}
+          height={20}
+          className="md:h-[24px] md:w-[72px]"
+          unoptimized
+        />
+        <Image
+          src="/assets/drickle.png"
+          alt="Drickle"
+          width={60}
+          height={18}
+          className="md:h-[22px] md:w-[72px]"
+          unoptimized
+        />
+        <Image
+          src="/assets/quenzy logo 1.png"
+          alt="Quenzy"
+          width={55}
+          height={22}
+          className="md:h-[26px] md:w-[65px]"
+          unoptimized
+        />
+        <Image
+          src="/assets/SN Logo Black.png"
+          alt="Starknet"
+          width={70}
+          height={18}
+          className="md:h-[22px] md:w-[85px]"
+          unoptimized
+        />
       </div>
     </div>
   );
